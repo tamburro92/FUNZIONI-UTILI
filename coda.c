@@ -1,8 +1,8 @@
 //
 //  coda.c
-//  CODA lezione 9.4.13
+//  FUNZIONI per CODA
 //
-//  Created by Francesco Grauso on 09/04/13.
+//  Created by Francesco Grauso 
 //  Copyright (c) 2013 Francesco Grauso. All rights reserved.
 //
 
