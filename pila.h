@@ -1,8 +1,8 @@
 //
 //  pila.h
-//  Lezione 5-4-13
+//  FUNZIONI per PILA
 //
-//  Created by Francesco Grauso on 06/04/13.
+//  Created by Francesco Grauso
 //  Copyright (c) 2013 Francesco Grauso. All rights reserved.
 //
 
