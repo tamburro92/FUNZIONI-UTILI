@@ -1,13 +1,14 @@
-/*
- * arraydinamico.h
- *
- *  Created on: 26/mar/2013
- *      Author: Gennaro w/ Busillo
- */
+//
+//  arraydinamico.h
+//
+//  Created by Francesco Grauso 
+//  Copyright (c) 2013 Francesco Grauso. All rights reserved.
+//
 
 #ifndef ARRAYDINAMICO_H_
 #define ARRAYDINAMICO_H_
-#include "info.h"
+
+typedef int TInfo;
 
 struct SArray {
 	int size; /* Dimensione Fisica */

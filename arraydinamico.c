@@ -1,9 +1,10 @@
-/*
- * arraydinamico.c
- *
- *  Created on: 26/mar/2013
- *      Author: Gennaro w/ Busillo
- */
+//
+//  arraydinamico.c
+//
+//  Created by Francesco Grauso 
+//  Copyright (c) 2013 Francesco Grauso. All rights reserved.
+//
+
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
