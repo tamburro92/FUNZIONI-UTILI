@@ -11,5 +11,6 @@
 
 
 int findMin(int * vettore, int dimensione);
-
+long fattoriale(long);
+long fibonacci(long); 
 #endif
