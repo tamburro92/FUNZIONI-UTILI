@@ -9,13 +9,14 @@
 #include <stdio.h>
 #include "recursive.h"
 
+
 int findMin(int *v, int dim)
 {
     int min;
     
-    if (dim==1)
+    if (dim==0)
     {
-        return v[0];
+     return v[0];
     }
     
     else
