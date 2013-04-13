@@ -45,3 +45,21 @@ long fibonacci(long n)
     return fibonacci(n-1) + fibonacci(n-2);
 
 }
+
+void hanoi(int n, int a, int b, int c)
+{
+    /* Questa funzione (ricorsiva) descrive le mosse da fare per poter
+     trasferire n dischi dal piolo a al piolo c, usando eventualmente
+     b come piolo per gli spostamenti intermedi.
+     Ovviamente, questi spostamenti vengono fatti tenendo conto del
+     vincolo espresso nel problema delle "torri di Hanoi": ciascun
+     disco non puo' mai essere poggiato su un disco piu' piccolo. */
+    if(n == 1) {
+        printf("Muovi il disco dal piolo %d al piolo %d\n", a, c);
+    }
+    else {
+        hanoi(n-1, a, c, b);
+        hanoi(1, a, b, c);
+        hanoi(n-1, b, a, c);
+    }
+}
