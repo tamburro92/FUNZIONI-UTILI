@@ -63,3 +63,24 @@ void hanoi(int n, int a, int b, int c)
         hanoi(n-1, b, a, c);
     }
 }
+
+
+
+int somma(int m, int n)
+{
+    
+    if(n<=0)
+    {
+        if (n) //è come !=0
+            return somma(m-1, n+1);
+        else
+            return m;
+    }
+    else
+    {
+        if (n) //è come !=0
+            return somma(m+1, n-1);
+        else
+            return m;
+    }
+}

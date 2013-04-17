@@ -14,4 +14,5 @@ int findMin(int * vettore, int dimensione);
 long fattoriale(long);
 long fibonacci(long);
 void hanoi(int n, int a, int b, int c);
+int somma(int, int);
 #endif
