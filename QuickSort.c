@@ -2,6 +2,8 @@
  **  QuickSort.c
  */
 
+
+//ordinamento di vettore tramite quicksort in base ai cognomi.
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -19,11 +21,11 @@ typedef struct SInfo TInfo;
 TInfo *AllocateMemory(int typesize, int n)
 {
     TInfo *vector;
-
+    
     vector = (TInfo *)malloc(n * typesize);
     if( !vector )
 		return NULL;
-
+    
     return vector;
 }
 
@@ -56,9 +58,9 @@ void print_info(TInfo *x, int i, int n) {
 bool less(TInfo *x, TInfo *y)
 {
 	int comp;
-
+    
 	comp = strcmp(x->surname, y->surname);
-
+    
 	if(comp < 0)
 		return true;
 	else
@@ -75,11 +77,11 @@ bool less(TInfo *x, TInfo *y)
 
 void swap(TInfo *x, TInfo *y) {
 	TInfo z;
-
+    
 	z = *x;
 	*x = *y;
 	*y = z;
-
+    
 	return;
 }
 
@@ -110,7 +112,7 @@ int partition(TInfo *a, int n) {
 void QuickSort(TInfo *a, int n)
 {
 	int k;
-
+    
 	if(n < 2)
 		return;
 	k = partition(a,n);
@@ -124,31 +126,31 @@ void QuickSort(TInfo *a, int n)
 int main(void) {
 	TInfo *v;
 	int n;
-
+    
 	printf("Inserire il numero di elementi del vettore: ");
 	scanf("%d", &n);
-
+    
 	/* Alloca il vettore di n elementi */
 	v = AllocateMemory(sizeof(TInfo), n);
 	if(v == NULL){
 		fprintf(stderr, "ERROR: bad allocation memory.\n");
 		exit(EXIT_FAILURE);
 	}
-
+    
 	read_info(v, 0, n);
-
+    
 	printf("Vettore inserito:\n");
 	print_info(v, 0, n);
 	printf("\n");
-
+    
 	QuickSort(v, n);
-
+    
 	printf("Vettore ordinato:\n");
 	print_info(v, 0, n);
 	printf("\n");
-
+    
 	free(v);
-
+    
 	return EXIT_SUCCESS;
 }
 
